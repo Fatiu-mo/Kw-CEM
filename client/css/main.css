@@ -8,6 +8,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-color: #f9f9f9;
+    font-family: "Public Sans", sans-serif;
   }
   
   .navbar {
@@ -24,7 +25,7 @@
   }
   
   .navbar.scrolled {
-    background-color: white;
+    background-color: #2a6511;
     position: fixed;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -61,25 +62,46 @@
   
   .hero {
     height: 100vh;
-    background-image: url('/client/assets/images/nick-design-I0SouaUIz-I-unsplash.jpg');
+    background-image: url('/client/assets/images/minimalist.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
+    gap: 5em;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   
   .hero-text h1 {
-    font-size: 2rem;
-    color: white;
+    font-size: 2.5rem;
+    color: #004400;
     margin-bottom: 0.5em;
+    line-height: 1.2em;
   }
   
   .hero-text p {
-    font-size: 1rem;
-    color: white;
+    font-size: 1.2rem;
+    color: #004400;
     padding: 0 1em;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75em 2em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #F9CF58;
+    text-decoration: none;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ddab1f;
   }
   
   /* Sidebar */
@@ -94,6 +116,7 @@
     flex-direction: column;
     padding-top: 5em;
     transition: right 0.3s ease;
+    z-index: 2;
   }
   
   .sidebar a {
@@ -113,6 +136,97 @@
   .sidebar.active {
     right: 0;
   }
+
+  /* value proposition */
+  .value-proposition {
+    padding: 3em 1em;
+    background: linear-gradient(135deg, #e0f7fa 0%, #f9f9f9 100%);
+    color: #333;
+    border-top: 4px solid #2a6511;
+    border-bottom: 4px solid #2a6511;
+  }
+  
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .value-proposition h2 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .value-proposition .intro {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.25em;
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  .value-proposition .details-list {
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+    list-style: none;
+    font-size: 1rem;
+  }
+  
+  .value-proposition .details-list li {
+    margin-bottom: 0.75em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .details-list li span {
+    color: #2a6511;
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+  }
+  
+  .highlight-box {
+    background-color: #fff;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2a6511;
+  }
+  
+  .highlight-box p {
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  
+  .highlight-box ul {
+    list-style: none;
+  }
+  
+  .highlight-box ul li {
+    margin-bottom: 0.75em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .highlight-box ul li span {
+    color: #2a6511;
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+  }
+  
+  .conclusion {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 2em;
+    font-weight: 500;
+  }
+  
   
   /* Media Query for Larger Screens */
   @media(min-width: 768px) {
@@ -125,5 +239,15 @@
     .hero-text p {
       font-size: 1.25rem;
     }
+    .value-proposition {
+        padding: 4em 2em;
+      }
+      .value-proposition h2 {
+        font-size: 2.5rem;
+      }
+      .value-proposition p,
+      .value-proposition ul li {
+        font-size: 1.25rem;
+      }
   }
   
