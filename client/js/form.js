@@ -1,21 +1,3 @@
-// Hamburger Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const sidebar = document.getElementById('sidebar');
-
-hamburger.addEventListener('click', () => {
-  sidebar.classList.toggle('active');
-});
-
-// Navbar Scroll Change
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
-
 document.getElementById('registration-form').addEventListener('submit', function (e) {
     e.preventDefault();
   
@@ -49,3 +31,10 @@ document.getElementById('registration-form').addEventListener('submit', function
   document.getElementById('close-error').addEventListener('click', function () {
     document.getElementById('error-popup').classList.add('hidden');
   });
+  
+  const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+
+hamburger.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});

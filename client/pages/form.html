@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/client/css/form.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">
+          <img src="/client/assets/images/KS logo (2).png" alt="kwara state government logo">
+          <p>KWARA STATE <br> GOVERNMENT</p>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="navbar-links">
+          <a href="/client/pages/index.html">HOME</a>
+          <a href="/client/pages/form.html">REGISTER</a>
+          <a href="#">ABOUT</a>
+        </div>
+      </header>
+
+      <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <a href="/client/pages/index.html">Home</a>
+    <a href="/client/pages/form.html">Register</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <div class="container">
+    <h1>Register for Government Benefits</h1>
+    <form id="registration-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="18" max="100" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="local-government">Local Government Area</label>
+      <select id="local-government" name="local-government" required>
+        <option value="" disabled selected>Select local government</option>
+        <option value="lg1">LGA 1</option>
+        <option value="lg2">LGA 2</option>
+        <option value="lg3">LGA 3</option>
+        <option value="lg4">LGA 4</option>
+        <!-- Add all 16 options -->
+      </select>
+
+      <label for="ward">Ward</label>
+      <select id="ward" name="ward" required>
+        <option value="" disabled selected>Select ward</option>
+        <option value="ward1">Ward 1</option>
+        <option value="ward2">Ward 2</option>
+        <!-- Add up to 8 options -->
+      </select>
+
+      <label for="community">Community</label>
+      <input type="text" id="community" name="community" required>
+
+      <label for="bvn">BVN</label>
+      <input type="text" id="bvn" name="bvn" required minlength="11" maxlength="11">
+
+      <label for="nin">NIN</label>
+      <input type="text" id="nin" name="nin" required minlength="11" maxlength="11">
+
+      <label for="bank">Bank Name</label>
+      <select id="bank" name="bank" required>
+        <option value="" disabled selected>Select bank</option>
+        <option value="first-bank">First Bank</option>
+        <option value="gtb">GTBank</option>
+        <option value="zenith">Zenith Bank</option>
+        <!-- Add more bank options -->
+      </select>
+
+      <label for="account-number">Bank Account Number</label>
+      <input type="text" id="account-number" name="account-number" required minlength="10" maxlength="10">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Confirmation Popup -->
+  <div id="confirmation-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Thank You for Registering!</h2>
+      <p>Your information has been successfully submitted.</p>
+      <button id="close-confirmation">Close</button>
+    </div>
+  </div>
+
+  <!-- Error Popup -->
+  <div id="error-popup" class="popup hidden">
+    <div class="popup-content error">
+      <h2>Oops, Something Went Wrong!</h2>
+      <p>Please double-check your form and try again.</p>
+      <button id="close-error">Retry</button>
+    </div>
+  </div>
+
+  <script src="/client/js/script.js"></script>
+</body>
+</html>
