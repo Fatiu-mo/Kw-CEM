@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/client/css/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Dashboard Summary -->
+        <section class="summary">
+            <div class="card">
+                <h3>Total Registrations</h3>
+                <p id="totalUsers">0</p>
+            </div>
+            <div class="card">
+                <h3>Local Government Areas</h3>
+                <p id="totalLGA">0</p>
+            </div>
+            <div class="card">
+                <h3>Flagged Duplicates</h3>
+                <p id="flaggedDuplicates">0</p>
+            </div>
+        </section>
+
+        <!-- User Data Table -->
+        <section class="user-table">
+            <h2>Registered Users</h2>
+            <input type="text" id="searchInput" placeholder="Search by Name, NIN, or BVN">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>LGA</th>
+                        <th>Ward</th>
+                        <th>NIN</th>
+                        <th>BVN</th>
+                        <th>Account Number</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+            <button id="addUserBtn" class="action-btn add-btn">Add User</button>
+
+            <!-- Pagination Controls -->
+            <div class="pagination">
+                <button id="prevPageBtn">&laquo; Previous</button>
+                <span id="currentPage">1</span>
+                <button id="nextPageBtn">Next &raquo;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Admin Dashboard © 2024</p>
+    </footer>
+
+    <!-- Confirmation Popup Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this record?</p>
+            <button id="confirmDeleteBtn" class="confirm-btn">Confirm</button>
+            <button id="cancelDeleteBtn" class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="/client/js/dashboard.js"></script>
+</body>
+</html>
