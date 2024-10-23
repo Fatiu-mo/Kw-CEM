@@ -25,7 +25,7 @@ document.getElementById('registration-form').addEventListener('submit', function
   
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
-    const age = document.getElementById('age').value;
+    const birthday = document.getElementById('birthday').value;
     const gender = document.getElementById('gender').value;
     const localGovt = document.getElementById('local-government').value;
     const ward = document.getElementById('ward').value;
@@ -37,7 +37,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     const vin = document.getElementById('vin').value
   
     // Basic Validation
-    if (!name || !phone || !age || !gender || !localGovt || !ward || !community || !vin || !bvn || !nin || !bank || !accountNumber) {
+    if (!name || !phone || !birthday || !gender || !localGovt || !ward || !community || !vin || !bvn || !nin || !bank || !accountNumber) {
       document.getElementById('error-popup').classList.remove('hidden');
     } else {
       document.getElementById('confirmation-popup').classList.remove('hidden');
