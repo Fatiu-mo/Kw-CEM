@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
     hamburger.style.color = '#333'
   } else {
     navbar.classList.remove('scrolled');
-    hamburger.style.color = 'white'
+    hamburger.style.color = '#333'
   }
 });
 

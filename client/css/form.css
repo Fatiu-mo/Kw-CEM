@@ -64,7 +64,7 @@
   }
   
   /* Show Menu When Active */
-  .dropdown-menu.active {
+  .dropdown-menu.show {
     max-height: 300px; /* Adjust height based on content */
   }
   
@@ -321,6 +321,10 @@ a:hover {
         text-decoration: none;
         color: white;
         cursor: pointer;
+    }
+
+    .container {
+        max-width: 600px;
     }
 
     .footer-container {

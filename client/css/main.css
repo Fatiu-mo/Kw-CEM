@@ -17,7 +17,7 @@
     padding: 1em;
     width: 100%;
     top: 0;
-    position: fixed;
+    
     z-index: 1000;
     transition: background-color 0.3s ease;
   }
@@ -35,7 +35,7 @@
   .hamburger {
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: #333;
   }
   
 
