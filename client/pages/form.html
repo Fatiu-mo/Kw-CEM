@@ -55,6 +55,22 @@
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" required>
 
+      <label for="name">Occupation</label>
+      <input type="text" id="occupation" name="occupation" required>
+
+      <label for="education-qualification">Educational Qualification</label>
+      <select id="education-qualification" name="education-qualification">
+        <option value="" disabled selected>Select </option>
+        <option value="ssc">SSC</option>
+        <option value="nce">NCE</option>
+        <option value="ond">OND</option>
+        <option value="hnd">HND</option>
+        <option value="bsc">BSc</option>
+        <option value="msc">MSc</option>
+        <option value="mpa">MPA</option>
+        <option value="phd">PhD</option>
+      </select>
+
       <label for="local-government">Local Government Area</label>
       <select id="local-government" name="local-government" required>
         <option value="" disabled selected>Select local government</option>
@@ -96,6 +112,20 @@
 
       <label for="account-number">Bank Account Number</label>
       <input type="text" id="account-number" name="account-number" required minlength="10" maxlength="10">
+
+      <label for="government-benefit">Government Benefit</label>
+      <select id="government-benefit" name="government-benefit" required>
+        <option value="" disabled selected>Select government benefit</option>
+        <option value="owo-isowo">Owo isowo</option>
+        <option value="youths">Youth skilled/unskilled</option>
+        <option value="owo-arugbo">Owo arugbo</option>
+        <option value="agric-implements">Agric implements</option>
+        <option value="fertilizer">Fertilizer</option>
+        <option value="scholarship">Scholarship</option>
+        <option value="student-aid">Student aid/loan</option>
+        <option value="transporter">Transporter</option>
+        <option value="other">Other palliatives</option>
+      </select>
 
       <button type="submit">Submit</button>
     </form>

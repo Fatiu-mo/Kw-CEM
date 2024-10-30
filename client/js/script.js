@@ -35,6 +35,8 @@ document.getElementById('registration-form').addEventListener('submit', function
     const bank = document.getElementById('bank').value;
     const accountNumber = document.getElementById('account-number').value;
     const vin = document.getElementById('vin').value
+    const occupation = document.getElementById('occupation').value
+    const benefit = document.getElementById('government-benefit').value
   
     // Basic Validation
     if (!name || !phone || !birthday || !gender || !localGovt || !ward || !community || !vin || !bvn || !nin || !bank || !accountNumber) {

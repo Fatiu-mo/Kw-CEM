@@ -1,7 +1,8 @@
 // Example data (this would come from the database in a real app)
 let users = [
-    { name: 'John Doe', phone: '08012345678', lga: 'Ilorin West', ward: 'Adewole', nin: '12345678901', bvn: '22222222222', accountNumber: '1111111111' },
-    { name: 'Jane Smith', phone: '08098765432', lga: 'Asa', ward: 'Alapa', nin: '10987654321', bvn: '33333333333', accountNumber: '2222222222' },
+    { name: 'John Doe', phone: '08012345678', lga: 'Ilorin West', ward: 'Adewole', nin: '12345678901', bvn: '22222222222', accountNumber: '1111111111', bank: "Zenith" },
+    { name: 'Jane Smith', phone: '08098765432', lga: 'Asa', ward: 'Alapa', nin: '10987654321', bvn: '33333333333', accountNumber: '2222222222', bank: "UBA" },
+    { name: 'Park Lith', phone: '08098765431', lga: 'Irepodun', ward: 'Esie', nin: '10987654325', bvn: '33333333233', accountNumber: '2222222122', bank: "Opay" },
     // Add more users
 ];
 
@@ -32,8 +33,8 @@ function loadUserTable(page = 1) {
             <td>${user.phone}</td>
             <td>${user.lga}</td>
             <td>${user.ward}</td>
-            <td>${user.nin}</td>
             <td>${user.bvn}</td>
+            <td>${user.bank}</td>
             <td>${user.accountNumber}</td>
             <td class="xtra-btn">
                 <button class="action-btn edit-btn">Edit</button>
@@ -68,7 +69,8 @@ document.getElementById('searchInput').addEventListener('input', function() {
     const filteredUsers = users.filter(user => 
         user.name.toLowerCase().includes(searchValue) || 
         user.nin.includes(searchValue) ||
-        user.bvn.includes(searchValue)
+        user.bvn.includes(searchValue) ||
+        user.uniqueId.toLowerCase().includes(searchValue)
     );
     
     // Update the table with filtered users
@@ -82,8 +84,8 @@ document.getElementById('searchInput').addEventListener('input', function() {
             <td>${user.phone}</td>
             <td>${user.lga}</td>
             <td>${user.ward}</td>
-            <td>${user.nin}</td>
             <td>${user.bvn}</td>
+            <td>${user.bank}</td>
             <td>${user.accountNumber}</td>
             <td class="xtra-btn">
                 <button class="action-btn edit-btn">Edit</button>
