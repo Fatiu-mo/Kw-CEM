@@ -21,69 +21,39 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1em;
-}
-
 /* Hero section */
 .hero {
+    text-align: center;
+    padding-bottom: 2em;
     background-color: #2B8B02;
     color: white;
-    padding: 2em;
-    text-align: center;
-}
-
-.hero img {
-    max-width: 100%;
-    height: auto;
 }
 
 .hero h1 {
     color: white;
-    font-size: 2rem;
-    margin-bottom: 0.5em;
+    padding: 0 1em;
 }
 
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Introduction */
-.introduction, .how-it-works, .key-benefits, .contact-us {
-    margin: 3em 0;
-}
-
-.introduction img, .how-it-works img, .key-benefits img {
-    display: block;
-    width: 100%;
+.governor-image {
+    max-width: 100%;
     height: auto;
-    margin: 1em 0;
-    background-color: #ddd; /* Placeholder for image */
+    border-radius: 8px;
+    margin-bottom: 1em;
 }
 
-/* Key sections */
+/* Section Titles */
 .section-title {
-    margin-bottom: 1em;
-    text-align: center;
     font-size: 1.5rem;
     color: #2B8B02;
+    text-align: center;
+    margin-top: 2em;
 }
 
-.cta {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    background-color: #F9CF58;
-    color: #2B8B02;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-    background-color: #E21033;
-    color: white;
+/* Container */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 /* Footer Styles */
@@ -197,25 +167,15 @@ a:hover {
 /* Medium Screens (Tablets) */
 @media (min-width: 768px) {
     .container {
-        max-width: 750px;
+        max-width: 700px;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
+    .hero {
+        padding: 2.5em 1em;
     }
 
-    .two-columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .two-columns .text-content {
-        flex-basis: 48%;
-    }
-
-    .two-columns img {
-        flex-basis: 48%;
+    .section-title {
+        font-size: 2rem;
     }
 
     .footer-container {
@@ -259,13 +219,14 @@ a:hover {
         max-width: 1000px;
     }
 
-    .hero h1 {
-        font-size: 3rem;
+    .hero {
+        padding: 3em 1em;
     }
 
-    .two-columns .text-content, .two-columns img {
-        flex-basis: 48%;
+    .governor-image {
+        width: 50%;
     }
+
     .footer-container {
         flex-direction: row;
         align-items: flex-start;
