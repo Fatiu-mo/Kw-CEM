@@ -52,10 +52,20 @@
                     </tr>
                 </thead>
                 <tbody id="userTableBody">
-                    <!-- Dynamic rows will be inserted here -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>12345678901</td>
+                        <td>Irepodun</td>
+                        <td>Esie</td>
+                        <td>1234567890</td>
+                        <td>Opay</td>
+                        <td>1234567890</td>
+                        <td class="xtra-btn">
+                            <button class="action-btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
-            <button id="addUserBtn" class="action-btn add-btn">Add User</button>
 
             <!-- Pagination Controls -->
             <div class="pagination">
@@ -63,6 +73,47 @@
                 <span id="currentPage">1</span>
                 <button id="nextPageBtn">Next &raquo;</button>
             </div>
+        </section>
+
+        <!-- User Data Cards for Mobile View -->
+        <section class="user-cards">
+            <h2>Registered Users</h2>
+            <input type="text" id="searchInput" placeholder="Search by Name, NIN, BVN or Unique ID">
+            
+            <div class="user-card">
+                <div class="row"><span class="key">Name:</span> <span class="value">John Doe</span></div>
+                <div class="row"><span class="key">Phone:</span> <span class="value">12345678901</span></div>
+                <div class="row"><span class="key">LGA:</span> <span class="value">Irepodun</span></div>
+                <div class="row"><span class="key">Ward:</span> <span class="value">Esie</span></div>
+                <div class="row"><span class="key">BVN:</span> <span class="value">1234567890</span></div>
+                <div class="row"><span class="key">Bank:</span> <span class="value">Opay</span></div>
+                <div class="row"><span class="key">Account Number:</span> <span class="value">1234567890</span></div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <div class="user-card">
+                <div class="row"><span class="key">Name:</span> <span class="value">Park Lith</span></div>
+                <div class="row"><span class="key">Phone:</span> <span class="value">12345678901</span></div>
+                <div class="row"><span class="key">LGA:</span> <span class="value">Irepodun</span></div>
+                <div class="row"><span class="key">Ward:</span> <span class="value">Esie</span></div>
+                <div class="row"><span class="key">BVN:</span> <span class="value">1234567890</span></div>
+                <div class="row"><span class="key">Bank:</span> <span class="value">Opay</span></div>
+                <div class="row"><span class="key">Account Number:</span> <span class="value">1234567890</span></div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <div class="user-card">
+                <div class="row"><span class="key">Name:</span> <span class="value">Park Lith</span></div>
+                <div class="row"><span class="key">Phone:</span> <span class="value">12345678901</span></div>
+                <div class="row"><span class="key">LGA:</span> <span class="value">Irepodun</span></div>
+                <div class="row"><span class="key">Ward:</span> <span class="value">Esie</span></div>
+                <div class="row"><span class="key">BVN:</span> <span class="value">1234567890</span></div>
+                <div class="row"><span class="key">Bank:</span> <span class="value">Opay</span></div>
+                <div class="row"><span class="key">Account Number:</span> <span class="value">1234567890</span></div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <!-- Repeat for each user record -->
         </section>
     </main>
 

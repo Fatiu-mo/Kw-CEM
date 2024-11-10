@@ -36,8 +36,7 @@ function loadUserTable(page = 1) {
             <td>${user.bvn}</td>
             <td>${user.bank}</td>
             <td>${user.accountNumber}</td>
-            <td class="xtra-btn">
-                <button class="action-btn edit-btn">Edit</button>
+            <td>
                 <button class="action-btn delete-btn" onclick="confirmDelete(${index + start})">Delete</button>
             </td>
         `;
