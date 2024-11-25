@@ -13,8 +13,7 @@ let selectedUserIndex = null; // Track the selected user for deletion
 // Initialize dashboard statistics
 function loadDashboardStats() {
     document.getElementById('totalUsers').innerText = users.length;
-    document.getElementById('totalLGA').innerText = new Set(users.map(user => user.lga)).size;
-    document.getElementById('flaggedDuplicates').innerText = 0; // Implement duplicate checking later
+    document.getElementById('totalLGAreg').innerText = new Set(users.map(user => user.lga)).size;
 }
 
 // Load user data into the table

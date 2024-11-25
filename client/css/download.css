@@ -1,0 +1,27 @@
+body {
+    font-family: "Public Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    margin-top: 3em;
+    padding: 2em;
+    max-width: 35em;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2B8B02;
+}
+
+.user-info p {
+    margin: 1em 0;
+}

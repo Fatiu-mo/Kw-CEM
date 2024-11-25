@@ -40,6 +40,7 @@ h1, h2 {
 
 /* Action Buttons */
 .user-actions button {
+    margin-top: 2em;
     color: white;
     padding: 0.7em 1.5em;
     border: none;
@@ -48,24 +49,10 @@ h1, h2 {
     margin-right: 1em;
 }
 
-.edit-btn {
-    background-color: #f9cf58;
-}
-
 .delete-btn {
     background-color: #E21033;
 }
 
-/* Activity Log */
-.activity-log ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.activity-log li {
-    margin-bottom: 0.5em;
-    color: #666;
-}
 
 /* Admin Notes */
 .admin-notes textarea {
