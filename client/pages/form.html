@@ -114,19 +114,36 @@
       <input type="text" id="account-number" name="account-number" required minlength="10" maxlength="10">
 
       <label for="government-benefit">Government Benefit</label>
-      <select id="government-benefit" name="government-benefit" required>
-        <option value="" disabled selected>Select government benefit</option>
-        <option value="owo-isowo">Owo isowo</option>
-        <option value="youths">Youth skilled/unskilled</option>
-        <option value="kwarapreneur">Kwarapreneur</option>
-        <option value="owo-arugbo">Owo arugbo</option>
-        <option value="agric-implements">Agric implements</option>
-        <option value="fertilizer">Fertilizer</option>
-        <option value="scholarship">Scholarship</option>
-        <option value="student-aid">Student aid/loan</option>
-        <option value="transporter">Transporter</option>
-        <option value="other">Other palliatives</option>
-      </select>
+<select id="government-benefit" name="government-benefit" required>
+  <option value="" disabled selected>Select government benefit</option>
+  <option value="owo-isowo">Owo isowo</option>
+  <option value="youths">Youth skilled/unskilled</option>
+  <option value="kwarapreneur">Kwarapreneur</option>
+  <option value="owo-arugbo">Owo arugbo</option>
+  <option value="transporter">Transporter</option>
+  <optgroup label="Agric Benefits">
+    <option value="agric-benefit agric-implements">Agric implements</option>
+    <option value="agric-benefit fertilizer">Fertilizer</option>
+  </optgroup>
+  <optgroup label="Student Benefits">
+    <option value="student-benefit scholarship">Scholarship</option>
+    <option value="student-benefit student-aid">Student aid/loan</option>
+    <option value="student-benefit bursary">Bursary</option>
+    <option value="student-benefit school-feeding">School Feeding</option>
+  </optgroup>
+  <optgroup label="Artisans">
+    <option value="artisan plumber">Plumber</option>
+    <option value="artisan electrician">Electrician</option>
+    <option value="artisan mechanic">Mechanic</option>
+    <option value="artisan bricklayer">Bricklayer</option>
+    <option value="artisan tiler">Tiler</option>
+    <option value="artisan furniture-maker">Furniture Maker</option>
+    <option value="artisan welder">Welder</option>
+    <option value="artisan painter">Painter</option>
+  </optgroup>
+  <option value="other">Other palliatives</option>
+</select>
+
 
       <button type="submit">Submit</button>
     </form>
